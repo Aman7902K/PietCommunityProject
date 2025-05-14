@@ -7,7 +7,7 @@ import { useNavigate } from 'react-router-dom';
 import { faCalendarDays } from '@fortawesome/free-solid-svg-icons';
 
 function Home() {
-  const [projectsData, setProjectsData] = useState([]);  // Default as empty array, not null
+  const [projectsData, setProjectsData] = useState([]); 
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {

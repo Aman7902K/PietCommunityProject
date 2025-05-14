@@ -6,7 +6,6 @@ function AnnouncementCard({ announcement }) {
 
   return (
     <div className="bg-gray-300 shadow-md p-4 rounded-lg w-96 mx-auto my-4 hover:shadow-gray-400 ">
-      {/* Header: Profile, Name, Position, Department */}
       <div className="flex items-center gap-4">
         <img
           src={`http://localhost:5000${announcement.profileImg}`}
@@ -20,11 +19,9 @@ function AnnouncementCard({ announcement }) {
         </div>
       </div>
 
-      {/* Content */}
       <div className="mt-4">
         <p className="text-gray-800">{content}</p>
 
-        {/* Conditionally render the image only if contentImg exists */}
         {contentImg ? (
           <img
             src={`http://localhost:5000${announcement.contentImg}`}

@@ -12,7 +12,7 @@ const PORT = 5000;
 const dataDir = path.join(__dirname, 'backend/data');
 const uploadDir = path.join(__dirname, 'backend/uploads');
 
-// ✅ Create folders if they don't exist
+// Create folders if they don't exist
 if (!fs.existsSync(dataDir)) fs.mkdirSync(dataDir, { recursive: true });
 if (!fs.existsSync(uploadDir)) fs.mkdirSync(uploadDir, { recursive: true });
 
@@ -28,14 +28,14 @@ app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use('/uploads', express.static(uploadDir));
 
-// ✅ Multer config
+// Multer config
 const storage = multer.diskStorage({
   destination: uploadDir,
   filename: (req, file, cb) => cb(null, Date.now() + '-' + file.originalname)
 });
 const upload = multer({ storage });
 
-// ✅ JSON helper functions
+// JSON helper functions
 const readJSON = (file) => {
   const filePath = path.join(dataDir, file);
   if (!fs.existsSync(filePath)) return [];
@@ -89,7 +89,7 @@ app.post('/api/projects', upload.single('image'), (req, res) => {
   try {
     const projects = readJSON('projects.json');
 
-    console.log('Uploaded file:', req.file); // ✅ Debugging
+    console.log('Uploaded file:', req.file); // Debugging
 
     const newProject = {
       id: Date.now(),

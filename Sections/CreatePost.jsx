@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { announcements } from '../Constants/Index'; // Your constant where announcements are stored
+import { announcements } from '../Constants/Index'; 
 
 function CreatePost() {
   const [formData, setFormData] = useState({
@@ -35,8 +35,8 @@ function CreatePost() {
   body.append('position', formData.position);
   body.append('department', formData.department);
   body.append('content', formData.content);
-  body.append('liveLink', formData.liveLink || ''); // Assuming you might add liveLink if necessary
-  body.append('status', formData.status || ''); // Assuming you might add status if necessary
+  body.append('liveLink', formData.liveLink || ''); 
+  body.append('status', formData.status || ''); 
   if (formData.contentImg) body.append('contentImg', formData.contentImg);
   if (formData.profileImg) body.append('profileImg', formData.profileImg);
 

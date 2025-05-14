@@ -1,6 +1,6 @@
 import React from 'react';
 import FullCalendar from '@fullcalendar/react';
-import dayGridPlugin from '@fullcalendar/daygrid'; // for month view
+import dayGridPlugin from '@fullcalendar/daygrid'; 
 
 const EventsCalendar = () => {
   const events = [

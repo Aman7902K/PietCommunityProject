@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import ProjectCard from '../Components/ProjectCard';
 
 function Project() {
-  const [projectsData, setProjectsData] = useState([]);  // Default as empty array, not null
+  const [projectsData, setProjectsData] = useState([]);  
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -37,7 +37,7 @@ function Project() {
   const totalPages = Math.ceil(projectsData.length / projectsPerPage);
 
   if (loading) {
-    return <div>Loading...</div>;  // Show loading message while fetching data
+    return <div>Loading...</div>; 
   }
 
   return (
