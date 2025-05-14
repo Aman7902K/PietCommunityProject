@@ -48,7 +48,7 @@ function Home() {
   const departments = ['All', ...new Set(projectsData.map(a => a.department))];
 
   return (
-    <div className="min-h-screen bg-gray-50 p-16">
+    <div className="min-h-screen bg-[url('https://i.pinimg.com/1200x/7f/da/e8/7fdae83507a0e18b86d23cfd7f495bda.jpg')] bg-cover bg-center bg-no-repeat p-16">
       <h1 className="text-4xl font-bold text-center py-5">College Announcements</h1>
       
       <div className="flex flex-row justify-between  mb-6">

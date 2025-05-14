@@ -41,7 +41,7 @@ function Project() {
   }
 
   return (
-    <div className="flex flex-col min-h-screen bg-gray-50 py-16">
+    <div className="flex flex-col min-h-screen bg-[url('https://i.pinimg.com/1200x/d8/27/f9/d827f92295330bbd43f5906e67d23cdd.jpg')] py-16">
       <h1 className="text-4xl font-montserrat font-bold text-center py-3">PIET Projects</h1>
       <div className="mt-2 max-w-screen overflow-x-hidden min-h-screen">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 p-8">

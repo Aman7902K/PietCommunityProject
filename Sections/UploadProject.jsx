@@ -48,11 +48,11 @@ function UploadProject() {
       console.error(err);
       alert('❌ Error uploading project');
     }
-  };
+  }
 
   return (
-    <div className="min-h-screen bg-gray-100 px-4 py-16">
-      <div className="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-md">
+    <div className=" min-h-screen bg-[url('https://i.pinimg.com/1200x/f7/7d/8f/f77d8f4238fe57658b6e43c68fa7227d.jpg')] bg-cover bg-center bg-no-repeat px-4 py-16 ">
+      <div className="max-w-2xl mx-auto mt-12 bg-white p-8 rounded-lg shadow-md">
         <h2 className="text-2xl font-bold mb-6 text-center">Upload Project</h2>
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>

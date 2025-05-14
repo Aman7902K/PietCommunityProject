@@ -5,7 +5,7 @@ function AnnouncementCard({ announcement }) {
   console.log(`http://localhost:5000${announcement.image}`);
 
   return (
-    <div className="bg-gray-300 shadow-md p-4 rounded-lg w-96 mx-auto my-4 hover:shadow-gray-400 ">
+    <div className="bg-gray-100 shadow-md p-4 rounded-lg w-96 mx-auto my-4 hover:shadow-gray-400 ">
       <div className="flex items-center gap-4">
         <img
           src={`http://localhost:5000${announcement.profileImg}`}
