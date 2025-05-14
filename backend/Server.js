@@ -9,8 +9,8 @@ const app = express();
 const PORT = 5000;
 
 // Paths
-const dataDir = path.join(__dirname, 'Backend/data');
-const uploadDir = path.join(__dirname, 'Backend/uploads');
+const dataDir = path.join(__dirname, 'backend/data');
+const uploadDir = path.join(__dirname, 'backend/uploads');
 
 // ✅ Create folders if they don't exist
 if (!fs.existsSync(dataDir)) fs.mkdirSync(dataDir, { recursive: true });
@@ -18,7 +18,7 @@ if (!fs.existsSync(uploadDir)) fs.mkdirSync(uploadDir, { recursive: true });
 
 // CORS
 app.use(cors({
-  origin: 'http://localhost:5173',
+  origin: 'http://localhost:5174',
   methods: ['GET', 'POST'],
   allowedHeaders: ['Content-Type', 'Authorization']
 }));

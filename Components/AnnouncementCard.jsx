@@ -2,13 +2,14 @@ import React from "react";
 
 function AnnouncementCard({ announcement }) {
   const { profileImg, name, position, department, content, contentImg } = announcement;
+  console.log(`http://localhost:5000${announcement.image}`);
 
   return (
-    <div className="bg-gray-300 shadow-md p-4 rounded-lg max-w-md mx-auto my-4 hover:shadow-gray-400 ">
+    <div className="bg-gray-300 shadow-md p-4 rounded-lg w-96 mx-auto my-4 hover:shadow-gray-400 ">
       {/* Header: Profile, Name, Position, Department */}
       <div className="flex items-center gap-4">
         <img
-          src={profileImg}
+          src={`http://localhost:5000${announcement.profileImg}`}
           alt={name}
           className="w-16 h-16 rounded-full object-cover border"
         />
@@ -26,7 +27,7 @@ function AnnouncementCard({ announcement }) {
         {/* Conditionally render the image only if contentImg exists */}
         {contentImg ? (
           <img
-            src={contentImg}
+            src={`http://localhost:5000${announcement.contentImg}`}
             alt="Announcement"
             className="mt-2 rounded-md w-full object-cover"
             style={{ maxHeight: "300px", objectFit: "contain" }} // Optional styling to limit the image size

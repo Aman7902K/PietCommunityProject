@@ -1,13 +1,33 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { announcements } from '../Constants/Index';
 import AnnouncementCard from '../Components/AnnouncementCard';
-import EventsCalendar from "../Components/EventsCalendar";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useNavigate } from 'react-router-dom';
 
 import { faCalendarDays } from '@fortawesome/free-solid-svg-icons';
 
 function Home() {
+  const [projectsData, setProjectsData] = useState([]);  // Default as empty array, not null
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    fetch('http://localhost:5000/api/posts')
+      .then((res) => {
+        if (!res.ok) {
+          throw new Error('Failed to fetch projects');
+        }
+        return res.json();
+      })
+      .then((data) => {
+        setProjectsData(data);
+        setLoading(false);  // Set loading to false after data is fetched
+      })
+      .catch((error) => {
+        console.error(error);
+        setLoading(false);
+      });
+  }, []);
+    console.log(projectsData);
 
   const AnnouncmentsPerPage = 9;
   const navigate = useNavigate();
@@ -17,15 +37,15 @@ function Home() {
 
   const indexOfLastAnnouncement = currentPage * AnnouncmentsPerPage;
   const indexOfFirstAnnouncement = indexOfLastAnnouncement - AnnouncmentsPerPage;
-  const totalPages = Math.ceil(announcements.length / AnnouncmentsPerPage);
+  const totalPages = Math.ceil(projectsData.length / AnnouncmentsPerPage);
 
   const filteredAnnouncements = selectedDept === 'All'
-    ? announcements
-    : announcements.filter(a => a.department?.trim() === selectedDept);
+    ? projectsData
+    : projectsData.filter(a => a.department?.trim() === selectedDept);
 
   const currentAnnouncement = filteredAnnouncements.slice(indexOfFirstAnnouncement, indexOfLastAnnouncement);
   
-  const departments = ['All', ...new Set(announcements.map(a => a.department))];
+  const departments = ['All', ...new Set(projectsData.map(a => a.department))];
 
   return (
     <div className="min-h-screen bg-gray-50 p-16">
