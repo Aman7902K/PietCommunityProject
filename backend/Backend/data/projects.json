@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1747202110128,
+    "title": "Second Project",
+    "description": "Testing Upload project and Project sections",
+    "department": "MCA",
+    "image": "/uploads/1747202109811-ak.jpg",
+    "liveLink": "",
+    "status": "Completed"
+  },
+  {
+    "id": 1747202053604,
+    "title": "first",
+    "description": "jj",
+    "department": "BCA",
+    "image": "/uploads/1747202053587-photo_2021-07-27_00-38-18.jpg",
+    "liveLink": "",
+    "status": "Live"
+  }
+]
