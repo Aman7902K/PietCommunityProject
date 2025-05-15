@@ -37,11 +37,16 @@ function Project() {
   const totalPages = Math.ceil(projectsData.length / projectsPerPage);
 
   if (loading) {
-    return <div>Loading...</div>; 
-  }
+  return (
+    <div className="min-h-screen pt-28 px-8 bg-[url('https://i.pinimg.com/1200x/a7/bf/8e/a7bf8e534918be24fea8fbeeb8552aa9.jpg')] bg-cover bg-center bg-no-repeat flex items-center justify-center">
+      <p className="text-2xl font-semibold text-gray-700">Loading Projects...</p>
+    </div>
+  );
+}
+
 
   return (
-    <div className="flex flex-col min-h-screen bg-[url('https://i.pinimg.com/1200x/d8/27/f9/d827f92295330bbd43f5906e67d23cdd.jpg')] py-16">
+    <div className="flex flex-col min-h-screen bg-[url('https://i.pinimg.com/1200x/a7/bf/8e/a7bf8e534918be24fea8fbeeb8552aa9.jpg')] bg-cover bg-center bg-no-repeat py-16">
       <h1 className="text-4xl font-montserrat font-bold text-center py-3">PIET Projects</h1>
       <div className="mt-2 max-w-screen overflow-x-hidden min-h-screen">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 p-8">

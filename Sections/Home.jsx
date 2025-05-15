@@ -56,6 +56,7 @@ function Home() {
         <div  className="flex flex-row justify-start  mb-6">
             <FontAwesomeIcon icon={faCalendarDays} size="2x"
             onClick={()=>navigate('/CalenderPage')}
+            className='hover:cursor-pointer'
              />        
           </div>
 

@@ -1,6 +1,10 @@
+import { useNavigate } from 'react-router-dom';
+
 function ProjectCard({ project }) {
   // console.log(project.image);
-  
+  const navigate = useNavigate();
+console.log(project.id);
+
   console.log(`http://localhost:5000${project.image}`);
   
   return (
@@ -16,9 +20,10 @@ function ProjectCard({ project }) {
       <p className="text-gray-600 mt-2">{project.description}</p>
 
       <div className="flex items-end justify-between">
-        <a href={project.link} className="text-blue-500 mt-4 inline-block">
+        <a href={project.link} className="text-blue-500 mt-4 inline-block hover:cursor-pointer"
+            onClick={()=>navigate(`/ProjectDetails/${project.id}`)}>
           View Project
-        </a>
+           </a>
         <p className="text-sm font-medium font-mono">{project.department}</p>
       </div>
     </div>

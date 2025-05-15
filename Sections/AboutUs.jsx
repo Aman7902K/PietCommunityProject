@@ -1,6 +1,7 @@
 import React from 'react'
 import {teamMembers} from "../Constants/Index"
 function AboutUs() {
+  // https://i.pinimg.com/1200x/08/cf/15/08cf15e6bc7599debe86fd25ad15f887.jpg
   return (
      <div className="min-h-screen bg-[url('https://i.pinimg.com/736x/66/fd/76/66fd76279f5b75185ba4d79e32520cd4.jpg')] bg-cover bg-center bg-no-repeat p-16 overflow-y-auto ">
       <div className="max-w-7xl mx-auto mt-3">
