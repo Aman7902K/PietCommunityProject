@@ -18,7 +18,7 @@ if (!fs.existsSync(uploadDir)) fs.mkdirSync(uploadDir, { recursive: true });
 
 // CORS
 app.use(cors({
-  origin: 'http://localhost:5174',
+  origin: 'http://localhost:5175',
   methods: ['GET', 'POST'],
   allowedHeaders: ['Content-Type', 'Authorization']
 }));
