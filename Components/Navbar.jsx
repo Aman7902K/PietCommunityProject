@@ -1,9 +1,16 @@
 import { navLinks } from '../Constants/Index';
 import { Link, useLocation } from "react-router-dom";
+import { useDispatch } from 'react-redux' 
+import { useEffect } from 'react';
 
 function Navbar() {
   const location = useLocation();
   const currentPath = location.pathname;
+  
+
+  useEffect(()=>{
+
+  })
 
   return (
     <header className='padding-x py-2 bg-white fixed top-0 left-0 z-50 w-full shadow-xl'>
