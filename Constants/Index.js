@@ -5,6 +5,7 @@ export const navLinks = [
   { href: "#upload-project", label: "Upload Project", link: '/uploadproject' },
   { href: "#create-post", label: "Create Post", link: '/createpost' },
   { href: "#about-us", label: "About Us", link: '/aboutus' },
+  { href: "#login", label: "Login", link:"/login"}
 ];
 
 
@@ -230,9 +231,9 @@ export const announcements = [
 export const teamMembers = [
   {
     name: 'Abhishek',
-    role: 'Frontend Developer',
-    bio: 'Passionate about building responsive and interactive user interfaces using React and Tailwind CSS.',
-    image: 'https://i.pinimg.com/736x/9a/2b/35/9a2b358f096612656f231f1caf4f5806.jpg', 
+  role: 'Fullstack Developer',
+  bio: 'Full Stack Developer with expertise in building scalable web applications using React, Node.js and Express. Skilled in creating seamless user experiences and robust backend systems.',
+  image: 'https://i.pinimg.com/736x/9a/2b/35/9a2b358f096612656f231f1caf4f5806.jpg',
   },
   {
     name: 'Bhawna',
