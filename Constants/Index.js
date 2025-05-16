@@ -5,6 +5,7 @@ export const navLinks = [
   { href: "#upload-project", label: "Upload Project", link: '/uploadproject' },
   { href: "#create-post", label: "Create Post", link: '/createpost' },
   { href: "#about-us", label: "About Us", link: '/aboutus' },
+  { href: "#login", label: "Login", link:"/login"}
 ];
 
 
