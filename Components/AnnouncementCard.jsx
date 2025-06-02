@@ -2,13 +2,18 @@ import React from "react";
 
 function AnnouncementCard({ announcement }) {
   const { profileImg, name, position, department, content, contentImg } = announcement;
-  console.log(`http://localhost:5000${announcement.image}`);
+  // To fetch just the profile image, you can use the profileImg property:
+  const profileImageUrl = `http://localhost:5000${profileImg}`;
+  const extractedProfileImg = profileImageUrl.replace('http://localhost:5000', '');
+  console.log(extractedProfileImg);
+  
+  
 
   return (
     <div className="bg-gray-100 shadow-md p-4 rounded-lg w-96 mx-auto my-4 hover:shadow-gray-400 ">
       <div className="flex items-center gap-4">
         <img
-          src={`http://localhost:5000${announcement.profileImg}`}
+          src={extractedProfileImg}
           alt={name}
           className="w-16 h-16 rounded-full object-cover border"
         />

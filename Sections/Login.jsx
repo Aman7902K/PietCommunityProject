@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { loginUser } from '../redux/userSlice'; // adjust path as per your project
+// import { loginUser } from '../redux/userSlice'; // adjust path as per your project
 import { useNavigate } from 'react-router-dom';
 
 function Login() {

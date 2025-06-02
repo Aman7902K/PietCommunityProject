@@ -1,0 +1,114 @@
+[
+  {
+    "id": 1748769928395,
+    "name": "Espadas",
+    "position": "1",
+    "department": "Gun",
+    "content": "fight of ss\r\n",
+    "contentImg": "/uploads/1748769928391-Screenshot from 2025-05-22 14-33-50.png",
+    "profileImg": "/uploads/https://images.unsplash.com/photo-1607746882042-944635dfe10e",
+    "liveLink": "",
+    "status": ""
+  },
+  {
+    "id": 1748768401268,
+    "name": "Espadas",
+    "position": "1",
+    "department": "Gun",
+    "content": "Vs Kyoraku",
+    "contentImg": null,
+    "profileImg": null,
+    "liveLink": "",
+    "status": ""
+  },
+  {
+    "id": 1,
+    "profileImg": "https://images.unsplash.com/photo-1607746882042-944635dfe10e",
+    "name": "Dr. Priya Sharma",
+    "position": "Head of Department",
+    "department": "Computer Applications",
+    "content": "Mid-semester exams will commence from 20th May. Please check the timetable on the portal.",
+    "contentImg": "https://i.pinimg.com/736x/33/7f/8f/337f8f8c9dcef49a4c330edc7c3bc9b1.jpg"
+  },
+  {
+    "id": 2,
+    "profileImg": "https://i.pravatar.cc/150?u=faculty1",
+    "name": "Mr. Rahul Mehta",
+    "position": "Assistant Professor",
+    "department": "Information Technology",
+    "content": "A workshop on Cybersecurity is scheduled for 18th May in Lab 3. Registration is open.",
+    "contentImg": "https://i.pinimg.com/736x/90/d9/b5/90d9b537b611efb05a603a45c1908501.jpg"
+  },
+  {
+    "id": 3,
+    "profileImg": "https://images.unsplash.com/photo-1607746882042-944635dfe10e",
+    "name": "Dr. Sneha Kapoor",
+    "position": "Professor",
+    "department": "Software Engineering",
+    "content": "Final project submissions are due by 25th May. Late submissions will not be accepted.",
+    "contentImg": null
+  },
+  {
+    "id": 4,
+    "profileImg": "https://images.unsplash.com/photo-1607746882042-944635dfe10e",
+    "name": "Ms. Kavita Rao",
+    "position": "Lecturer",
+    "department": "Data Science",
+    "content": "Guest lecture by industry expert Mr. Anil Joshi on 22nd May in Auditorium A.",
+    "contentImg": "https://i.pinimg.com/736x/e5/02/54/e50254e4abb6f533e87d63ce3c33fa27.jpg"
+  },
+  {
+    "id": 5,
+    "profileImg": "https://ui-avatars.com/api/?name=Faculty+Member&size=150",
+    "name": "Mr. Aman Singh",
+    "position": "Teaching Assistant",
+    "department": "Artificial Intelligence",
+    "content": "Lab 5 will remain closed for maintenance on 17th May. Kindly plan accordingly.",
+    "contentImg": null
+  },
+  {
+    "id": 6,
+    "profileImg": "https://images.unsplash.com/photo-1607746882042-944635dfe10e",
+    "name": "Dr. Ritu Verma",
+    "position": "Coordinator",
+    "department": "Computer Science",
+    "content": "New elective on Cloud Computing will be offered next semester. Enroll through the portal.",
+    "contentImg": "https://i.pinimg.com/736x/04/8e/0a/048e0a0ceaad679de9e4450a71c2251d.jpg"
+  },
+  {
+    "id": 7,
+    "profileImg": "https://i.pravatar.cc/150?u=faculty1",
+    "name": "Mr. Suresh Nair",
+    "position": "Lab Instructor",
+    "department": "Networking",
+    "content": "Lab exams for Network Security will begin on 23rd May. Check schedule on LMS.",
+    "contentImg": null
+  },
+  {
+    "id": 8,
+    "profileImg": "https://images.unsplash.com/photo-1607746882042-944635dfe10e",
+    "name": "Dr. Meena Joshi",
+    "position": "Senior Lecturer",
+    "department": "Computer Science",
+    "content": "Placement orientation session will be conducted on 19th May in Room 204.",
+    "contentImg": "https://i.pinimg.com/736x/5a/75/19/5a7519d42e9b31c83a3116a45c569e3d.jpg"
+  },
+  {
+    "id": 9,
+    "profileImg": "https://i.pravatar.cc/150?u=faculty1",
+    "name": "Mr. Aditya Jain",
+    "position": "Research Associate",
+    "department": "AI & ML",
+    "content": "Submit your research proposals by 21st May to be considered for the summer grant.",
+    "contentImg": null
+  },
+  {
+    "id": 10,
+    "profileImg": "https://images.unsplash.com/photo-1607746882042-944635dfe10e",
+    "name": "Dr. Neha Bansal",
+    "position": "Assistant Dean",
+    "department": "Computer Science",
+    "content": "Internal assessments for all subjects will close on 24th May. Contact your faculty if pending.",
+    "contentImg": "https://i.pinimg.com/736x/6c/d9/88/6cd98867c0f6bb96418bf367382f5bc5.jpg"
+  }
+]

@@ -7,4 +7,5 @@ import AboutUs from "./AboutUs.jsx"
 import CalendarPage from "./CalendarPage.jsx"
 import ProjectDetails from "./ProjectDetails.jsx"
 import Login from "./Login.jsx"
-export {Navbar, Home, Project ,CreatePost,UploadProject, AboutUs,CalendarPage,ProjectDetails,Login}
+import Profile from "./Profile.jsx"
+export {Navbar, Home, Project ,CreatePost,UploadProject, AboutUs,CalendarPage,ProjectDetails,Login,Profile}

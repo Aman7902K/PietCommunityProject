@@ -4,6 +4,7 @@ import AnnouncementCard from '../Components/AnnouncementCard';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useNavigate } from 'react-router-dom';
 import { faCalendarDays } from '@fortawesome/free-solid-svg-icons';
+import {motion} from "framer-motion"
 
 function Home() {
   const [projectsData, setProjectsData] = useState([]); 
@@ -79,8 +80,8 @@ function Home() {
           </select>
         </div>
       </div>
-
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+{/*  */}
+      <div className='grid grid-cols-4 sm:grid-cols-2 md:grid-cols-3 gap-8'>
         {currentAnnouncement.map((announcement, id) => (
           <AnnouncementCard key={id} announcement={announcement} />
         ))}

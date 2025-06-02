@@ -1,4 +1,4 @@
-import { Home, Navbar, Project,CreatePost, UploadProject, AboutUs, CalendarPage, ProjectDetails, Login} from "../Sections/Index.js"
+import { Home, Navbar, Project,CreatePost, UploadProject, AboutUs, CalendarPage, ProjectDetails, Login,Profile} from "../Sections/Index.js"
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
@@ -17,6 +17,7 @@ function App() {
           <Route path="/CalenderPage" element={<CalendarPage />} />
           <Route path="/ProjectDetails/:id" element={<ProjectDetails />} />
           <Route path="/Login" element={<Login/>}/>
+          <Route path="/Profile" element = {<Profile/>}/>
         </Routes>
       </Router>
     </>

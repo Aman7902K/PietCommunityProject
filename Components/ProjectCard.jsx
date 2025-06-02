@@ -4,6 +4,8 @@ function ProjectCard({ project }) {
   // console.log(project.image);
   const navigate = useNavigate();
 console.log(project.id);
+console.log("yo yo");
+
 
   console.log(`http://localhost:5000${project.image}`);
   

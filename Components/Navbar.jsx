@@ -8,9 +8,7 @@ function Navbar() {
   const currentPath = location.pathname;
   
 
-  useEffect(()=>{
 
-  })
 
   return (
     <header className='padding-x py-2 bg-white fixed top-0 left-0 z-50 w-full shadow-xl'>
@@ -29,6 +27,7 @@ function Navbar() {
             </li>
           ))}
         </ul>
+        <div className='flex justify-end items-center rounded-[50%] bg-blue-400 w-15 h-15 mr-2'>Profile</div>
       </nav>
     </header>
   );
